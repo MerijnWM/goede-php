@@ -1,0 +1,23 @@
+body{	
+	background-size: cover;	
+}
+
+#text{	
+	font-family: 'Lobster', cursive;   
+	font-size: 70px;
+	color: white;
+	position: absolute;
+	left: 33%;
+	top: 280px;
+}
+
+#groet {   
+	font-family: 'Lobster', cursive;
+	font-size: 70px;
+	color: white;
+	position: absolute;
+	left: 33%;
+	top: 190px;
+}
+
+
