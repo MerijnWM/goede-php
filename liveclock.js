@@ -2,11 +2,8 @@ var myfont_face = "Arial";
 var myfont_size = "50";
 var myfont_color = "white";	
 var mywidth = 80;
-var old = "";
 
-if (document.getElementById) { 
-	document.write('<span id="LiveClockIE" style="width:'+mywidth+'px;"></span>'); 
-}
+document.write('<span id="LiveClock" style="width:'+mywidth+'px;"></span>'); 
 
 function show_clock() {	
 	var Digital = new Date();
@@ -21,8 +18,8 @@ function show_clock() {
 	myclock += hours+':'+minutes+' ';
 	myclock += '</font>';	
 	
-	if (document.getElementById) {
-		document.getElementById("LiveClockIE").innerHTML = myclock;
-	}
+	
+	document.getElementById("LiveClock").innerHTML = myclock;
+	
 	setTimeout("show_clock()",1000);
 }
